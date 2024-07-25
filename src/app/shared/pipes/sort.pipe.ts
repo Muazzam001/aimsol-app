@@ -5,7 +5,6 @@ export type SortOrder = 'asc' | 'desc';
 
 @Pipe({
   name: 'sort',
-  standalone: true
 })
 export class SortPipe implements PipeTransform {
 

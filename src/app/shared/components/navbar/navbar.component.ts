@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { itemsNavMenu } from '../../shared/datas/nav-menu';
+import { itemsNavMenu } from '../../datas/nav-menu';
 
 @Component({
   selector: 'app-navbar',
