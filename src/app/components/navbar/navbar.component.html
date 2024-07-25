@@ -1,0 +1,10 @@
+<p>navbar works!</p>
+<nav>
+  <ul class="navigation-list">
+    @for (itemNav of navitems; track $index) {
+    <li>
+      {{ itemNav.label }}
+    </li>
+    }
+  </ul>
+</nav>
