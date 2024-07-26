@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { itemsContactDetails } from '../../datas/contact-details';
 
 @Component({
   selector: 'app-topbar',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
   templateUrl: './topbar.component.html',
   styleUrl: './topbar.component.scss'
 })
-export class TopbarComponent {
+export class TopbarComponent implements OnInit {
+  topbarItems!: any;
 
+  ngOnInit(): void {
+    this.topbarItems = itemsContactDetails;
+  }
 }

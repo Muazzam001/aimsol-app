@@ -5,6 +5,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BannerSliderComponent } from "../shared/components/banner-slider/banner-slider.component";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
     CommonModule,
     LayoutRoutingModule,
     SharedModule,
-  ]
+    BannerSliderComponent
+]
 })
 export class LayoutModule { }

@@ -2,3 +2,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-flex rounded-3xl ps-3.5 pe-3.5 py-1.5 border outline-main-secondary/50;
+
+    &-main {
+      &-primary {
+        @apply bg-main-primary border-main-primary text-main-tertiary hover:bg-transparent focus:bg-transparent hover:border-main-primary focus:border-main-primary hover:text-main-primary focus:text-main-primary;
+
+
+        &-outline {
+          @apply bg-transparent border-main-primary text-main-primary hover:bg-main-primary focus:bg-main-primary hover:border-main-primary focus:border-main-primary hover:text-main-tertiary focus:text-main-tertiary;
+        }
+      }
+
+      &-secondary {
+        @apply bg-main-secondary border-main-secondary text-main-tertiary hover:bg-transparent focus:bg-transparent hover:border-main-secondary focus:border-main-secondary hover:text-main-secondary focus:text-main-secondary;
+
+
+        &-outline {
+          @apply bg-transparent border-main-secondary text-main-secondary hover:bg-main-secondary focus:bg-main-secondary hover:border-main-secondary focus:border-main-secondary hover:text-main-tertiary focus:text-main-tertiary;
+        }
+      }
+
+      &-tertiary {
+        @apply bg-main-tertiary border-main-secondary text-main-secondary hover:bg-main-secondary focus:bg-main-secondary hover:border-main-tertiary focus:border-main-tertiary hover:text-main-tertiary focus:text-main-tertiary;
+
+
+        &-outline {
+          @apply bg-transparent border-main-secondary text-main-primary hover:bg-main-secondary focus:bg-main-secondary hover:border-main-primary focus:border-main-primary hover:text-main-tertiary focus:text-main-tertiary;
+        }
+      }
+
+    }
+  }
+}

@@ -1,1 +1,5 @@
-<p>topbar works!</p>
+<ul>
+  @for (itemTop of topbarItems; track $index) {
+  <li>{{ itemTop.label }}</li>
+  }
+</ul>
